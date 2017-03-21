@@ -1,69 +1,666 @@
 
-#container {
-    background-color: #b12125;
-    display: block;
-    margin: 0 auto;
-    width: 800px;
-    height: 941px;
+@font-face {
+    font-family: fancyFont;
+    src: url(Snell-Roundhand-Script.ttf);
 }
-.square {
-    background-color: #aaaeae;
-    border: 1px dotted white;
-    display: inline-block;
-    margin-bottom: -6px;
-}
-.grid {
-    background-color: grey;
-    display: block;
-    margin: 0 auto;
-    width: 640px;
-    margin-top:14px;
-}
-.colored {
-    background-color: black;
-}
-.header {
-    background-color: grey;
-    height: 153px;
-    width: 100%;
-    background-color: #b12125;
-}
-.buttons::after {
-    background-color: white;
-    border-radius: 50%;
-    bottom: 86px;
-    content: "";
-    display: block;
-    height: 103px;
-    left: 610px;
-    position: relative;
-    width: 108px;
-}
-.buttons::before {
-    background-color: white;
-    border-radius: 50%;
-    bottom: -20px;
-    content: "";
-    display: block;
-    height: 103px;
-    left: 80px;
-    position: relative;
-    width: 108px;
-}
-h1 {
-    color: #EBB563;
-    text-align: center;
-    font-family: 'Slabo 27px', serif;
-    padding-top: 30px;
 
+.secondary-font {
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 }
-.reset {
-    background-color: #b12125;
-    border: 3px solid white;
+.white-text {
+	color: white!important;
+}
+body, html {
+	margin: 0;
+	padding: 0;
+	font-family: "Palatino Bold","Book Antiqua","Georgia";
+}
+
+nav {
+	height: 50px;
+	display:block;
+	
+}
+/* Navigation styles */
+.nav {
+    background-color: #35727a;
+    display: block;
+    height: 50px;
+    list-style: outside none none;
+    margin: 0;
+    opacity: 0.9;
+    padding: 0;
+    position: fixed;
+    text-align: right;
+    top: 0;
+    width: 100%;
+}
+.nav > li:first-child {
+	float: left;
+}
+#logo {
+	height: 30px;
+	margin-left:20px;
+}
+.nav > li {
+	display: inline-block;
+	padding: 10px;
+}
+.nav > li:last-child {
+	margin-right: 50px;
+}
+.nav > li > a {
+	text-decoration: none;
+	font-size: 24px;
+	color: white;
+	font-family: 'Palatino Bold','Book Antiqua','Georgia';
+}
+.nav > li:not(:first-child):hover {
+	background-color: #57868c;
+}
+
+/* Mobile navigation styles */
+@media only screen and (max-width: 800px){
+	#logo {
+		display: none!important;
+	}
+
+	.nav {
+		display: none;
+		height: auto;
+		position: fixed;
+		top: 41px;
+		opacity: 0.9;
+	}
+	.nav > li {
+		display: block;
+		width: 100%;
+		text-align: center;
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.nav > li:last-child {
+		padding-bottom: 10px;
+	}
+	
+	
+	.nav-btn {
+		background-color: #35727a;
+		color: white;
+		display: block;
+		font-size: 24px;
+		height: auto;
+		opacity: 0.9;
+		padding-bottom: 8px;
+		padding-right: 20px;
+		padding-top: 4px;
+		position: fixed;
+		text-align: center;
+		top: 0;
+		width: 100%;
+}
+	.nav-btn:before {
+		content: "☰";
+	}
+	
+}
+/* Medium screen styles */
+@media screen and (max-width: 1060px){
+	#photo, .social-links {
+		display: none!important;
+	}
+	#intro {
+		width: 100%!important;
+		background-color: white!important;
+	}
+	#intro > p {
+		color:black!important;
+		background-color:white!important;
+	}
+	#home {
+		box-shadow: none!important;
+		height: 1000px!important;
+	}
+	#intro-text::after {
+		content: "";
+		display: block;
+		clear: both;
+		height: 600px;
+		background-image: url("img/katya-mobile-1.png");
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	#intro-text {
+		font-size: 49px!important;
+	}
+	#fancy-font {
+		font-size: 66px!important;
+	}
+	.social-links-black {
+		display: block!important;
+	}
+	.social-black > li:first-child {
+		padding-left: 0;
+	}
+	.social-black li {
+		display: inline-block;
+		padding-left: 20px;
+	}
+	.social-black {
+    list-style: outside none none;
+    text-align: center;
+	}
+	.project-container {
+		width: 100%!important;
+	}
+	#projects {
+		height: 2390px!important;
+	}
+	.project {
+		height: 300px!important;
+		width: 600px!important;
+	}
+	.skill-column {
+		width: 100%!important;
+	}
+	.skill {
+		float: left!important;
+		margin-left:40px!important!;
+		width: 27%!important;
+	}
+	.progress-bar {
+		width: 60%!important;
+		float:left!important;
+		margin-left:30px!important;
+	}
+	#skills {
+		height: 600px!important;
+	}
+	.social-footer li:first-child {
+    padding-right: 32px!important;
+	}
+	.field label, .field input, .field textarea {
+    margin: 0 !important;
+    padding-bottom: 10px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 17px !important;
+    width: 100% !important;
+	text-align: left!important;
+    padding-left: 11px!important;	
+	}
+	#contact {
+		height: 850px!important;
+	}
+	#contact-frame {
+		height: 750px!important;
+	}
+	.footer-block {
+		width: 100%!important;
+		background-color: #707070;
+		padding-bottom: 10px;
+	}
+	
+	.me {
+		font-size: 20px!important;
+		padding-top:0!important;
+	}
+	.me img {
+		display: inline!important;
+	}
+	.social-links-footer {
+		display:none!important;
+	}
+	
+}
+
+
+/* Main content styles */
+.wrapper {
+    margin: 60px auto 0px auto;
+    width: 85%;
+	font-size: 20px;
+	display:block;
+}
+.page {
+	padding-top: 50px;
+}
+
+/* Welcome section styles */
+#home {
+	display:block;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 600px;
+	-webkit-box-shadow: 0px 7px 16px 5px rgba(0,0,0,0.74);
+	-moz-box-shadow: 0px 7px 16px 5px rgba(0,0,0,0.74);
+	box-shadow: 0px 7px 16px 5px rgba(0,0,0,0.74);
+}
+#intro {
+    background-color: black;
+    display: block;
+    float: left;
+    height: 100%;
+    width: 70%;
+}
+#photo {
+    background-color: black;
+    display: block;
+    float: right;
+    height: 100%;
+    width: 30%;
+}
+#photo > img {
+    float: right;
+    height: 100%;
+}
+#fancy-font {
+    color: white;
+    font-family: fancyFont;
+    font-size: 65px;
+    text-align: center;
+}
+#intro-text {
+    color: white;
+    font-size: 40px;
+    padding: 0 60px;
+	text-align: center;
+}
+.social-links {
+	display: block;
+	width: 100%;
+}
+.social-links-black {
+	display: none;
+}
+
+ul.social > li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.social-links > ul {
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.scroll {
+    margin-bottom: 15px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.scroll img {
+    height: 113px;
+    margin-left: 30px;
+}
+
+/* Projects section styles */
+
+.page-title {
+    color: #c75c54;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 100px 0 35px;
+    padding: 0;
+    text-align: center;
+}
+
+#projects {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+	height: 745px;
+}
+
+.project {
+   
+	border: 7px solid #c75c54;
+	height: 220px;
+	margin: 0 auto;
+	width: 350px;
+}
+
+
+.project-container {
+    display: block;
+    float: left;
+    margin: 19px 1%;
+    min-height: 323px;
+    min-width: 378px;
+    padding-bottom: 11px;
+    width: 30%;
+}
+
+.project-description {
+    font-family: Century Gothic;
+    font-size: 23px;
+    padding: 14px 0;
+    text-align: center;
+}
+.project-card {
+	background-color: rgba(139, 139, 139, 0.9);
+    display: none;
+    height: 100%;	
+	overflow: hidden;
+}
+
+/* Skills section styles*/
+
+#skills {
+    border: 1px solid black;
+    display: block;
+    height: 500px;
+    width: 100%;
+	background-color: #707070;
+}
+
+.skill-column {
+    display: block;
+    float: left;
+    width: 48%;
+}
+
+.skill-bar {
+    height: 50px;
+    margin-bottom: 14px;
+}
+
+.skill {
     color: white;
     display: block;
+    float: left;
+    font-size: 26px;
+    margin-left: 20px;
+    padding-top: 10px;
+    text-align: right;
+    width: 30%;
+}
+
+.progress-bar {
+    background-color: white;
+    display: block;
+    float: right;
+    height: 100%;
+    width: 63%;
+}
+.skill-level {
+    background-color: #c75c54;
+    display: block;
+    float: left;
+    height: 100%;
+}
+/* Individual skill levels*/
+/* HTML + CSS */
+
+#skill-1-level { 
+	width: 90%;
+}
+
+/* JavaScript */
+#skill-2-level {
+	width: 60%;
+}
+
+/* jQuery*/
+#skill-3-level {
+	width: 50%;
+}
+
+/* Photoshop */
+#skill-4-level {
+	width: 60%;
+}
+
+/* PHP */
+#skill-5-level {
+	width: 40%;
+}
+
+/* SQL */
+#skill-6-level {
+	width: 50%;
+}
+/* Skill level bar animation */
+
+/* Skill 1*/
+@keyframes fillIn1 {
+  0% {
+    width: 0%;
+  }
+  60% {
+    width: 40%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+#skill-1-level {
+animation-duration: 2s;
+  animation-name: fillIn1;
+}
+
+/* Skill 2*/
+@keyframes fillIn2 {
+  0% {
+    width: 0%;
+  }
+  60% {
+    width: 30%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+#skill-2-level {
+animation-duration: 2s;
+  animation-name: fillIn2;
+}
+
+/* Contact page styles */
+#contact {
+	height: 682px;
+	
+}
+#contact-frame {
+    border: 6px solid #C75C54;
+    height: 575px;
     margin: 0 auto;
-    padding: 7px;
-    width: 400px;
-    font-size: 20px;
+	width: 90%; 
+}
+
+#contact-form {
+    margin: 0 auto;
+    padding-top: 55px;
+    width: 90%;
+}
+
+.field {
+	height: 50px;
+}
+
+#contact-form label {
+    display: block;
+    float: left;
+    padding-top: 30px;
+    text-align: right;
+    width: 16%;
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 26px;
+}
+
+#contact-form input, #contact-form textarea {
+    border: 6px solid #498088;
+    float: right;
+    height: 100%;
+    margin-top: 15px;
+    width: 80%;
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 24px;
+	color: #707070;
+	padding-left: 15px;
+}
+#contact-form input::focus, #contact-form textarea::focus{
+	background-color:beige;
+}
+
+#contact-form textarea {
+    height: 135px;
+	
+}
+
+
+.button {
+    clear: both;
+    display: block;
+    margin-top: 13px;
+    padding-top: 20px;
+}
+
+#submit-button {
+    background-color: #35727a;
+    border-radius: 10px;
+    color: white;
+    float: right;
+    font-size: 24px;
+    height: 60px;
+    width: 200px;
+}
+
+    #form-messages {
+    clear: both;
+    display: block;
+    font-family: "Palatino Bold","Book Antiqua","Georgia";
+    font-size: 24px;
+    height: 100px;
+    padding-top: 14px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Footer styles */
+
+footer {
+    background-color: #707070;
+    color: white;
+    height: 100px;
+    margin-top: 127px;
+    width: 100%;
+}
+
+.copyright-info {
+    display: block;
+    float: left;
+    height: 100%;
+    width: 53%;
+}
+
+.social-links-footer {
+    display: block;
+    float: left;
+    width: 47%;
+}
+
+.social-footer li {
+    display: inline-block;
+    float: right;
+    padding-right: 20px;
+}
+
+.social-footer li:first-child {
+    padding-right: 93px;
+}
+
+.me {
+    display: block;
+    float: left;
+    font-size: 26px;
+    padding-left: 62px;
+    padding-top: 32px;
+}
+/* Do not display the footer smily when in full mode*/
+.me img {
+	display: none;
+}
+
+.smiley {
+    padding-left: 19px;
+    padding-top: 22px;
+    width: 50px;
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+	.project-container {
+		width: 48%;
+		margin: 4px 1%;
+	}
+	#projects {
+		height: 1070px;
+	}
+	#contact-form input, #contact-form textarea {
+		width: 75%;
+	}
+	.me {
+		font-size: 22px;
+	}
+}
+
+/* Project card styles */
+.project-card > p {
+	color: white;
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	text-align: center;
+	font-size: 20px;	
+}
+.project-card-title {
+	font-weight: bold;
+	font-size: 14px;
+	text-transform:uppercase;
+}
+.project-card-title:after {
+	content: "";
+    display: block;
+    height: 1px;
+    width: 50%;
+    background: #fff;
+	margin: 10px auto 0 auto;
+}
+
+/* Individual projects*/
+.project { 
+background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: white;	
+}
+.project-container a {
+	text-decoration: none;
+}
+/* weather app */
+#project1 { 
+	background-image: url("img/projects/weather-app-project.jpg");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: white;
+}
+/* random quote machine */
+#project2 {
+	background-image: url("img/projects/quote-generator.jpg");
+}
+/* La Esperanza website*/
+#project3 {
+	background-image:url('img/projects/laesperanza.png');
+}
+
+/* Loungin' Lizzard website*/
+#project4 {
+	background-image: url('img/projects/loungin-lizzard.png');
+}
+/* Etch-a-sketch project */
+#project5 {
+	background-image: url('img/projects/etch-a-sketch.png');
 }
