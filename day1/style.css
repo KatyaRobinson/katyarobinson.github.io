@@ -1,9 +1,4 @@
 /* Color scheme
-#E1B07E - beige
-#E5BE9E - cream
-#CBC0AD - grey
-#86A397 - pale teal
-#361D2E - raspberry
 
 Bitter - body fonr
 Pacifico - title font
@@ -16,18 +11,17 @@ body {
 }
 
 #header {
-	background-image: url("images/pattern1.jpg");
+	
     background-repeat: repeat;
     background-size: contain;
     width: 100%;
 }
 
 #header img{
-
 	margin: 0 auto;
 	display: block;
 	border: 3px solid #F15025;
-	border-radius: 20px;
+	border-radius: 50%;
 }
 
 .box {
@@ -37,17 +31,22 @@ body {
 }
 
 .box span{
-	color: #F15025;
-    margin-left: 10%;
-    margin-top: 71px;
-    position: absolute;
+	color: #f15025;
     font-family: "Pacifico";
-    font-size: 2em;
+    font-size: 3em;
+    margin-left: 33%;
+    margin-top: 30%;
+    position: absolute;
+    text-align: center;
 }
 
 .title {
  font-family: "Pacifico";
  font-size: 3em;
+}
+
+h2 {
+	font-family: "Pacifico";
 }
 
 .service-image img{
@@ -67,4 +66,25 @@ body {
 	margin: 0 auto;
 }
 
+.row {
+	margin-top: 20px;
+}
 
+.cat-pic img{
+	border-radius: 20px;
+}
+.cat-name h3 {
+	text-align: center;
+	color: #fff;
+	padding-bottom: 20px;
+}
+
+.full-width {
+	width: 100%;
+	background-color: rgba(241, 80, 37, 0.5);
+}
+
+#meet-the-cats {
+    margin: 0 auto;
+    width: 70%;
+}
