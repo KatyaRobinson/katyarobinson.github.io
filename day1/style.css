@@ -30,14 +30,20 @@ body {
 	position: relative;
 }
 
-.box span{
+
+.company-name{
+	
+    position: absolute;
+    left: 0;
+    text-align: center;
+    top: 33%;
+    width: 100%;
+}
+
+.company-name h1 {
 	color: #f15025;
     font-family: "Pacifico";
     font-size: 3em;
-    margin-left: 33%;
-    margin-top: 30%;
-    position: absolute;
-    text-align: center;
 }
 
 .title {
@@ -88,3 +94,23 @@ h2 {
     margin: 0 auto;
     width: 70%;
 }
+
+
+/* Small screen styles */
+
+
+/* Portrait and Landscape */
+@media only screen and (max-width: 500px) {
+   .box h1 {
+   	font-size: 1.5em;
+   }
+}
+
+
+
+
+
+
+
+
+
