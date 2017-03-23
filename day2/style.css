@@ -1,0 +1,117 @@
+body {
+	background-image: url("images/candles.jpg");
+	background-repeat: no-repeat;
+	background-position: bottom;
+	height: 100vh;
+	background-size: contain;
+	background-color: #1A2225;
+	font-family: 'Pinyon Script';
+}
+
+.box {
+	text-align: center;
+	height: 80vh;
+	width: 70%;
+	margin: 30px auto 0 auto;
+	color: white;
+}
+
+.box p {
+	font-size: 3.5em;
+}
+
+.box span {
+	font-size: 2em;
+}
+
+
+
+@media only screen and (max-width: 650px) {
+   .box p {
+   	font-size: 2.5em;
+   }
+   
+}
+
+.party-info p{
+	font-family: 'Josefin Sans';
+	text-align: center;
+	color: white;
+	font-size: 2em;
+}
+
+.baloons img {
+	width: 150px;
+	display:block;
+	margin: 0 auto;
+}
+
+.baloons span {
+	font-family: 'Josefin Sans';
+	font-size: 1.3em;
+	opacity: 0.5;
+}
+.baloons span:hover {
+	opacity: 1;
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 20%;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    transition: all 1s ease;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    opacity: 0.9;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    font-family: 'Josefin Sans';
+    font-size: 1.5em;
+    transition: all 1s ease;
+    color: black;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input[type=text]{
+	width: 60%;
+}
+
+input[type=radio] {
+	
+}
+
+
+/*@media only screen and (max-width: 500px) {
+   .box p {
+   	font-size: 2em;
+   }
+   
+}*/
