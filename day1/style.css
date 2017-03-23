@@ -107,6 +107,8 @@ h2 {
     color: white;
     bottom: 5px;
     left: 33%;
+    display: block;
+    margin: 0 auto;
 }
 
 .service-box {
