@@ -95,14 +95,49 @@ h2 {
     width: 70%;
 }
 
+#contact-form {
+	background-color: rgba(241, 80, 37, 0.5);
+    border-color: #dcdcdc;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) inset, 0 1px 0 rgba(255, 255, 255, 0.1);
+
+}
+
+.detail-btn {
+    background-color: #F15025;
+    color: white;
+    bottom: 5px;
+    left: 33%;
+}
+
+.service-box {
+	/*border: 1px solid black;*/
+}
+
+.service-description {
+	padding: 20px;
+}
+
+.footer {
+	width: 100%;
+    background-color: grey;
+    color: white;
+    text-align: center;
+    height: 51px;
+    padding-top: 10px;
+}
+
+.footer a {
+	color: white;
+	text-decoration: underline;
+}
 
 /* Small screen styles */
-
-
-/* Portrait and Landscape */
 @media only screen and (max-width: 500px) {
    .box h1 {
    	font-size: 1.5em;
+   }
+   .footer {
+   	font-size: 0.7em;
    }
 }
 
