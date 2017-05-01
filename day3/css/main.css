@@ -3,11 +3,20 @@ img {
 	margin: 0 auto;
 }
 
+#sidebar-wrapper {
+	font-family: 'Dosis';
+}
+
 p {
-	width: 50%;
-	margin: 0 auto;
+    font-family: "Roboto Slab";
+    font-size: 1.3em;
+    line-height: 2em;
+    margin: 0 auto;
+    text-align: justify;
+    width: 70%;
 }
 
 h1 {
 	text-align: center;
+	font-family: 'Dosis';
 }
