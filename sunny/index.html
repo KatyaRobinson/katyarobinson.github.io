@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>La Locanda Restorante Italiano</title>
+
+  <!--jQuery-->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+	<!--Bootstrap CSS-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!--Bootstrap JS-->
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+	<!--Custom CSS-->
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<!--Custom JS-->
+	<script type="text/javascript" src="script.js"></script>
+	<!--Google fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Lato|Lora" rel="stylesheet"> 
+	<!--Fontawesome-->
+	<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type='text/css'>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+	<header class="navbar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        </div>
+        <div class="side-collapse in">
+          <nav role="navigation" class="navbar-collapse">
+          	<a class="navbar-brand" href="#"><img src="images/logo.png" width="220" height="100" alt="">
+  			</a>
+
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Menu <i class="fa fa-chevron-down"></i></a></li>
+              <li><a href="#">Who We Are</a></li>
+              <li><a href="#">Private Parties</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Reservations</a></li>
+              <li><a href="tel:+1-610-353-7033"><i class="fa fa-phone" aria-hidden="true"></i>
+(610)353-7033</a></li>
+              <li class="social"><a href="#"><i class="fa fa-facebook-f" aria-hidden="true"></i></a></li>
+              <li class="social"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              <li class="social"><a href="#"><i class="fa fa-yelp" aria-hidden="true"></i></a></li>
+
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="container-fluid side-collapse-container">
+
+      <!--Top banner section-->
+      <div id="banner" class="section">
+          <div class="box">
+  			     
+  				      <h1>Old World Traditional Cuisine <br /> Meets New World Style</h1>
+                <button class="btn" id="view-menu-btn">View our menu</button>
+                <h4>4989 West Chester Pike &#9679; Edgemont, PA 19028 &#9679; (610) 353-7033</h4>
+            
+            </div>
+          </div>
+
+        
+        <!--About section-->
+          <div id="about" class="section">
+            <div class="row">
+              <div class="col-md-8 col-sm-12">
+                <div id="about-box">
+                  <h3>About La Locanda</h3>
+                  <h4>For us, food is not just a way to our hearts, it is one of the joys of life itself</h4>
+                  <p>At La Locanda, our master Italian chefs take old world traditions and infuse them with new world style to offer a truly diverse menu.  From Dover Sole, filleted table side to our succulent Rack of Lamb, we offer only the finest, most well-prepared Northern-Italian inspired dishes you will find. </p>
+                  <p>With great food and the perfect setting for any occassion, we look forward to making your experience at La Locanda unforgettable.</p>
+
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-12 about-side">
+                <img src="images/food_01.jpg" alt="People dining at a restaurant">
+                <img src="images/food_02.jpg" alt="Seafood pasta dish">
+                <img src="images/food_03.jpg" alt="Decarated martini drink">
+              </div>
+            </div>  
+              
+            
+          </div>
+
+          <!--Upcoming Events section-->
+          <div id="events" class="container section">
+            <div class="row">
+              <h3>Upcoming Events</h3>
+            </div>
+            <div class="row">
+              <div class="col-md-4 col-sm-12 event">
+                <h4>prime rib night</h4>
+                <p><strong>February 18th 2015</strong> -  4:00pm - 10:00pm</p>
+                <button class="btn">View Event</button>
+              </div>
+              <div class="col-md-4 col-sm-12 event">
+                <h4>friday lunch buffet</h4>
+                <p><strong>February 20th 2015</strong> -  11:30am - 2:00pm</p>
+                 <button class="btn">View Event</button>
+              </div>
+              <div class="col-md-4 col-sm-12 event">
+                <h4>altesino wine dinner</h4>
+                <p><strong>March 5th 2015</strong> -  7:00pm - 11:00pm</p>
+                 <button class="btn">View Event</button>
+              </div>
+            </div>
+            
+          </div>
+
+          <!--Private party section-->
+          <div id="party" class="container section">
+            <h3>Planning A Private Party?</h3>
+            <button class="btn">book a private party</button>
+            <p>With private rooms that can hold anywhere from 12-72 people, La Locanda is the perfect place for your next social or corporate event. </p>
+          
+          </div>
+
+          <!--Map section-->
+          <div id="map" class="section">
+            <button class="btn">get directions</button>
+          </div>
+
+          <!--Contact section-->
+          <div id="contact" class="section container-fluid">
+            <div class="col-md-6 col-sm-12 contact">
+              <h4>Contact Information</h4>
+              <ul>
+                <li><i class="fa fa-home" aria-hidden="true"></i>4989 West Chester Pike, Edgemont, PA 19028</li>
+                <li><i class="fa fa-phone" aria-hidden="true"></i>(610) 353-7033</li>
+                <li><i class="fa fa-envelope" aria-hidden="true"></i>info@lalocandapa.com</li>
+                <li><i class="fa fa-facebook" aria-hidden="true"></i>Like us on Facebook</li>
+                <li><i class="fa fa-instagram" aria-hidden="true"></i>Like us on Instagram</li>
+                <li><i class="fa fa-yelp" aria-hidden="true"></i>Reviews on Yelp!</li>
+              </ul>
+            </div>
+
+            <div class="col-md-6 col-sm-12 contact">
+              <h4>Mailing List</h4>
+              <p>Receive the latest news and event updates from La Locanda.</p>
+
+              <form id="signup">
+                <div class="row">
+                    <div class="form-group col-md-6">
+                      <label for="email">Email Address *</label>
+                      <input type="text" class="form-control" name="email" id="email" placeholder="name@address.com">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="name">Name</label>
+                      <input type="text" name="name" id="name" class="form-control">
+                    </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <label>Birthday</label>
+                        
+                    
+                      <select id="birthday-month" class="form-control month">
+                        <option value="" selected>MONTH</option>
+                        <option value="January">January</option>
+                        <option value="Febuary">Febuary</option>
+                        <option value="March">March</option>
+                        <option value="April">April</option>
+                        <option value="May">May</option>
+                        <option value="June">June</option>
+                        <option value="July">July</option>
+                        <option value="August">August</option>
+                        <option value="September">September</option>
+                        <option value="October">October</option>
+                        <option value="November">November</option>
+                        <option value="December">December</option>
+                      </select>
+
+                      <select id="birthday-day" class="form-control day">
+                        <option value="" selected>DAY</option>
+                        <script>
+                        $(function(){
+                          for(var $i=1; $i <=31; $i++){
+                            $('#birthday-day').append("<option value='"+$i+"'>"+$i +"</option>");
+                          }
+                        });
+                        </script>
+                      </select>
+                     
+                  </div>
+
+
+                  <div class="form-group col-md-6">
+                    <label>Anniversary</label>
+
+                     
+                      <select id="anniv-month" class="form-control month">
+                        <option value="" selected>MONTH</option>
+                        <option value="January">January</option>
+                        <option value="Febuary">Febuary</option>
+                        <option value="March">March</option>
+                        <option value="April">April</option>
+                        <option value="May">May</option>
+                        <option value="June">June</option>
+                        <option value="July">July</option>
+                        <option value="August">August</option>
+                        <option value="September">September</option>
+                        <option value="October">October</option>
+                        <option value="November">November</option>
+                        <option value="December">December</option>
+                      </select>
+
+                      <select id="anniv-day" class="form-control day">
+                        <option value="" selected>DAY</option>
+                        <script>
+                        $(function(){
+                          for(var $i=1; $i <=31; $i++){
+                            $('#anniv-day').append("<option value='"+$i+"'>"+$i +"</option>");
+                          }
+                        });
+                        </script>
+                      </select>
+                      
+                     
+                  </div>
+                  
+                </div>
+                 <button type="submit" class="btn">Sign Up</button>
+
+            </form>
+
+
+              </div>
+            </div>
+
+           
+
+          
+
+          <!--Footer-->
+          <div class="footer">
+            <div class="row">
+              <div class="col-md-2 col-sm-12">
+                <img id="footer-logo" src="images/logo.png" width="165" alt="La Laconda Logo">
+              </div>
+              <div class="col-md-10 col-sm-12">
+                <ul id="footer-menu">
+                  <li><a href="#">Menu</a></li>
+                  <li><a href="#">Who We Are</a></li>
+                  <li><a href="#">Private Parties</a></li>
+                  <li><a href="#">Events</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Reservations</a></li>
+                  <li><a href="#">Sitemap</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="row copyright">
+              <div class="col-md-6">&copy; La Locanda. All Rights Reserved</div>
+               <div class="col-md-6 by">
+                 Wesbite by <a href="#">Allen & Goel Marketing Company</a>
+               </div>
+            </div>
+          </div>
+
+
+
+
+    </div> <!--end main container-->
+	
+</body>
+</html>
